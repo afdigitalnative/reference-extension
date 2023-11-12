@@ -7,7 +7,7 @@ This Bolt extension can be used as a starting point to base your own extensions 
 Installation:
 
 ```bash
-composer require acmecorp/reference-extension
+composer require acmecorptest/reference-extension
 ```
 
 

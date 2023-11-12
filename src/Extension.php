@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AcmeCorp\ReferenceExtension;
+namespace AcmeCorptest\ReferenceExtension;
 
 use Bolt\Extension\BaseExtension;
 use Symfony\Component\Routing\Route;
