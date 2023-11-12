@@ -39,7 +39,7 @@ class Extension extends BaseExtension
         return [
             'reference' => new Route(
                 '/extensions/reference/{name}',
-                ['_controller' => 'AcmeCorp\ReferenceExtension\Controller::index'],
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::index'],
                 ['name' => '[a-zA-Z0-9]+']
             ),
         ];
