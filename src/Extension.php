@@ -36,6 +36,7 @@ class Extension extends BaseExtension
      */
     public function getRoutes(): array
     {
+		/*
         return [
             'reference' => new Route(
                 '/extensions/reference/{name}',
@@ -43,6 +44,42 @@ class Extension extends BaseExtension
                 ['name' => '[a-zA-Z0-9]+']
             ),
         ];
+		*/
+		
+        return [
+            'getOccurrences' => new Route(
+                '/extensions/reference/getOccurrences',
+                [
+					'_controller' => 'AcmeCorptest\ReferenceExtension\Controller::index'
+				],
+				['name' => '[a-zA-Z0-9]+']
+            ),
+            'getOccurExtendedDetail' => new Route(
+                '/extensions/reference/getOccurExtendedDetail',
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::getOccurExtendedDetail'],
+                ['name' => '[a-zA-Z0-9]+']
+            ),
+            'getStudentDetail' => new Route(
+                '/extensions/reference/getStudentDetail',
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::getStudentDetail'],
+                ['name' => '[a-zA-Z0-9]+']
+            ),
+            'registerStudent' => new Route(
+                '/extensions/reference/registerStudent',
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::registerStudent'],
+                ['name' => '[a-zA-Z0-9]+']
+            ),
+            'proceedPayment' => new Route(
+                '/extensions/reference/proceedPayment',
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::proceedPayment'],
+                ['name' => '[a-zA-Z0-9]+']
+            ),
+            'applyPromo' => new Route(
+                '/extensions/reference/applyPromo',
+                ['_controller' => 'AcmeCorptest\ReferenceExtension\Controller::applyPromo'],
+                ['name' => '[a-zA-Z0-9]+']
+            ),				
+        ];		
     }
 
     /**

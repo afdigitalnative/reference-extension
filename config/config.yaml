@@ -1,3 +1,4 @@
 # Reference extension configuration file
-
-foo: Bar
+vetrack_api:
+    username: xxx
+    password: xxx
